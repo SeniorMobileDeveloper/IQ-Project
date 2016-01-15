@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[PictureAlbumView collectionView:cellForItemAtIndexPath:]:PictureAlbumView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "item.photo_name">
+            </PersistentString>
+            <PersistentString
+               value = "item.photo_path">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PDFListController tableView:didSelectRowAtIndexPath:]:PDFListController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedPdf.pdf_filename">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ProjectViewController tableView:cellForRowAtIndexPath:]:ProjectViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "taskrecord.task_complete">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ProjectViewController drawText]:ProjectViewController.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

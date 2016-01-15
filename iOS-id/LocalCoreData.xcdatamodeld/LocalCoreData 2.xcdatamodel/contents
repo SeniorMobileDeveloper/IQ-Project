@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="12F37" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Company" representedClassName="Company" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fax" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zip" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="contacts" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Contacts" inverseName="company" inverseEntity="Contacts" syncable="YES"/>
+    </entity>
+    <entity name="Contacts" representedClassName="Contacts" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="company" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Company" inverseName="contacts" inverseEntity="Company" syncable="YES"/>
+    </entity>
+    <entity name="Notes" representedClassName="Notes" syncable="YES">
+        <attribute name="date_created" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Projects" inverseName="notes" inverseEntity="Projects" syncable="YES"/>
+        <relationship name="task" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Tasks" inverseName="notes" inverseEntity="Tasks" syncable="YES"/>
+    </entity>
+    <entity name="ProjectGroup" representedClassName="ProjectGroup" syncable="YES">
+        <attribute name="projectgroup_active" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="projectgroup_name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Projects" inverseName="group" inverseEntity="Projects" syncable="YES"/>
+        <relationship name="tasks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tasks" inverseName="group" inverseEntity="Tasks" syncable="YES"/>
+    </entity>
+    <entity name="Projects" representedClassName="Projects" syncable="YES">
+        <attribute name="project_active" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="project_name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="group" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProjectGroup" inverseName="project" inverseEntity="ProjectGroup" syncable="YES"/>
+        <relationship name="notes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Notes" inverseName="project" inverseEntity="Notes" syncable="YES"/>
+    </entity>
+    <entity name="Tasks" representedClassName="Tasks" syncable="YES">
+        <attribute name="task_active" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="task_complete" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="task_desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="task_name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProjectGroup" inverseName="tasks" inverseEntity="ProjectGroup" syncable="YES"/>
+        <relationship name="notes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Notes" inverseName="task" inverseEntity="Notes" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Company" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Contacts" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Notes" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="ProjectGroup" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Projects" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Tasks" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>

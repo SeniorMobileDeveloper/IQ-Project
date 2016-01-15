@@ -1,0 +1,91 @@
+// !$*UTF8*$!
+{
+	DC47463B1A66EBD1003A5038 /* iOS-id */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "iOS-id";
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	DC47465F1A66EBD5003A5038 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	DC4746601A66EBD5003A5038 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	DC73759317F39EAC0001D88B /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = DC47463B1A66EBD1003A5038 /* iOS-id */;
+		activeTarget = DC73759A17F39EAC0001D88B /* iOS-id */;
+		codeSenseManager = DC4746601A66EBD5003A5038 /* Code sense */;
+		executables = (
+			DC47463B1A66EBD1003A5038 /* iOS-id */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					341,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 442952657;
+			PBXWorkspaceStateSaveDate = 442952657;
+		};
+		sourceControlManager = DC47465F1A66EBD5003A5038 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	DC73759A17F39EAC0001D88B /* iOS-id */ = {
+		activeExec = 0;
+		executables = (
+			DC47463B1A66EBD1003A5038 /* iOS-id */,
+		);
+	};
+	DC7375BE17F39EAC0001D88B /* iOS-idTests */ = {
+		activeExec = 0;
+	};
+}
